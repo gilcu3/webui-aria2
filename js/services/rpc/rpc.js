@@ -28,7 +28,7 @@ function(syscall, globalTimeout, alerts, utils, rootScope, uri, authconf, filter
     };
   }
 
-  if (['http', 'https'].indexOf(uri.protocol()) != -1 && uri.host() != 'localhost') {
+  /*if (['http', 'https'].indexOf(uri.protocol()) != -1 && uri.host() != 'localhost') {
     configurations.push({
       host: uri.host(),
       path: '/jsonrpc',
@@ -47,7 +47,7 @@ function(syscall, globalTimeout, alerts, utils, rootScope, uri, authconf, filter
       path: authconf.path,
       encrypt: ( uri.protocol() == 'https' )
     });
-  }
+  }*/
 
 
   // set if we got error on connection. This will cause another connection attempt.
